@@ -1,31 +1,37 @@
-//making a server using express external module>npm init > npm i express
-
 const express = require('express');
+const { myReadFile, mySaveFile } = require('./utils/file_Helper');
 
-const app = new express();
+const app =  express();
 
-app.use((req,res,next)=>{                // this is a first middleware with three parameters(req,res,next)
+app.use(express.json()); // middleware to read the (req) body
+
+app.use((req,res,next)=>{            // this is a first middleware with three parameters(req,res,next)
     console.log(new Date(), req.method,req.url);
-    // next();
-})
-
-app.use((req,res,next)=>{               // this is a second  middleware with three parameters(req,res,next)
-    console.log("second middleware");
     next();
 })
 
-app.get('/api/v1/products',(req,res)=>{
-    res.json({
+// app.use((req,res,next)=>{               // this is a second  middleware with three parameters(req,res,next)
+//     console.log("second middleware");
+//     next();
+// })
+
+app.get('/api/v1/products',async(req,res)=>{
+    const data = await myReadFile("./data.json")
+    res.status(200).json({
         isSucess:true,
         message:"(GET) is working fine",
-        data:{},
+        data:data,
     })
 })
-app.post('/api/v1/products',(req,res)=>{
-    res.json({
-        isSucess:true,
-        message:"(POST) is working fine",
-        data:{},
+app.post('/api/v1/products',async(req,res)=>{
+    const data = req.body;
+    console.log(data)
+    const oldData = await myReadFile("./data.json");
+    oldData.push(data)
+    await mySaveFile("./data.json",oldData)
+    res.status(201).json({
+        isSuccess:"true",
+        message:"product added successfully"
     })
 })
 
