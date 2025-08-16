@@ -1,32 +1,12 @@
 [
   {
-    "title": "Plastic Box",
-    "price": "INR 22",
-    "quantity": 5
+    "item": "Pencil Box",
+    "quantity": 20,
+    "id": "7241d1b6-2c1a-455a-9faf-3ecc8b8ef34a"
   },
   {
-    "title": "Plastic Box",
-    "price": "INR 22",
-    "quantity": 5
-  },
-  {
-    "title": "rasna",
-    "price": "INR 32",
-    "quantity": 50
-  },
-  {
-    "title": "Chana Masala",
-    "price": "INR 32",
-    "quantity": 50
-  },
-  {
-    "title": "Garam Masala",
-    "price": "INR 42",
-    "quantity": 30
-  },
-  {
-    "title": "Water Bottle",
-    "price": "INR 62",
-    "quantity": 80
+    "item": "bamboo sticks",
+    "quantity": 20,
+    "id": "4f71bfde-65a7-4daf-96a4-57cf213fa464"
   }
 ]

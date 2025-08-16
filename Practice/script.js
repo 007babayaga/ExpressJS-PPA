@@ -1,45 +1,100 @@
-// 1. Make the server
-const express = require('express');
-const { readFile, saveData } = require('./utils/Helper');
+const express = require("express");
+const { readFile, saveFile } = require("./utils/Helper");
+const { v4: uuidv4 } = require('uuid');
 
-//2.instance of express
 const app = express();
 
+//Middleware zero 
 app.use(express.json());
 
+//Middleware one
 app.use((req,res,next)=>{
-    console.log("first middleware");
+    console.log("first Middleware");
+    console.log(req.method,req.url);
     next();
 })
 
+//Middleware two
 app.use((req,res,next)=>{
-    console.log("second middleware");
+    console.log("Insdie second Middleware");
     next();
 })
 
-app.post('/api/v1/products',async(req,res)=>{
+//CRUD operations
+
+// post Api to Add produts in file
+app.post("/api/v1/products",async(req,res)=>{
     const data = req.body;
-    console.log(data);
-
+    data.id = uuidv4();
     const oldData = await readFile("./data.json")
     oldData.push(data);
-    await saveData("./data.json",oldData)
+    await saveFile("./data.json",oldData)
     res.status(201).json({
         isSucess:"true",
-        message:"item added successfully"
+        message:"Item added successfully"
     })
 })
-app.get('/api/v1/products',async(req,res)=>{
-    const ans = await readFile("./data.json")
+
+//get api to read products
+app.get("/api/v1/products",async(req,res)=>{
+    const data = await readFile("./data.json");
     res.status(200).json({
-        isSucess:"true",
-        message:"item added successfully",
-        data:ans
+        isSuccess:"true",
+        message:"items Fetched sucessfully",
+        data:data
     })
 })
 
+//patch api to update a product
+app.patch("/api/v1/products/:productId",async(req,res)=>{
+    const{productId} = req.params;
+    const data = req.body;
+    //get the products
+    const allPdt = await readFile("./data.json");
+    //search for Products havind the id
+    const idx = allPdt.findIndex((ele)=>{
+        return ele.id ==productId;
+    })
+    if(idx==-1){
+        res.status(400).json({
+            message:"wrong id enterd by user"
+        })
+        return;
+    }
+    const oldObj = allPdt[idx];
+    allPdt[idx]={...oldObj,...data}
+    //save it again
+    await saveFile("./data.json",allPdt);
+    res.status(200).json({
+        isSuccess:"true",
+        message:"Item updated sucessfully"
+    })
+})
 
-//3.listen to a port number
+//delete api to delete a product 
+
+app.delete("/api/v1/products/:productId",async(req,res)=>{
+    const{productId} = req.params;
+    const alldata = await readFile("./data.json");
+
+    const idx = alldata.findIndex((ele)=>{
+        return ele.id === productId;
+    })
+    if(idx==-1){
+        res.status(400).json({
+            message:"wrong id enterd by user"
+        })
+        return;
+    }
+    alldata.splice(idx,1);
+
+    await saveFile("./data.json",alldata);
+    res.status(204).json({
+        isSuccess:"true",
+        message:"Item deleted sucessfully"
+    })
+})
+
 app.listen(3900,()=>{
-    console.log('------------server started-----------')
+    console.log("-----------server started--------------")
 })
