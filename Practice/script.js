@@ -100,3 +100,4 @@ app.delete("/api/v1/products/:productId",async(req,res)=>{
 app.listen(3900,()=>{
     console.log("-----------server started--------------")
 })
+//some error I was seeing
