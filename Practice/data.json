@@ -1,0 +1,21 @@
+[
+  {
+    "item": "Mobile cover",
+    "quantity": 10,
+    "price": 340,
+    "id": "c26338b5-4404-48c5-8b76-744050e2dd02"
+  },
+  {
+    "item": "Mobile Phone",
+    "quantity": 10,
+    "price": 340,
+    "id": "4c03e655-38be-4d38-903c-be699cb8d4b6"
+  },
+  {
+    "item": "chana masala",
+    "quantity": 10,
+    "price": 40,
+    "id": "339f7da6-8f69-4f18-a91d-fb5057eeead1",
+    "expiry": "23-09-2025"
+  }
+]
