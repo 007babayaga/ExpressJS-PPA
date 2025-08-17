@@ -97,4 +97,3 @@ app.delete("/api/v1/products/:productId",async(req,res)=>{   //Delete Api
 app.listen(3900,()=>{
     console.log('--------------server started--------------')
 })
-//hi
