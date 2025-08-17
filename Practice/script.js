@@ -1,6 +1,7 @@
 const express = require("express");
 const { readFile, saveFile } = require("./utils/Helper");
 const { v4: uuidv4 } = require('uuid');
+// require("dotenv").config();
 
 const app = express();
 
@@ -35,7 +36,7 @@ app.post("/api/v1/products",async(req,res)=>{
     })
 })
 
-//get api to read products
+// //get api to read products
 app.get("/api/v1/products",async(req,res)=>{
     const data = await readFile("./data.json");
     res.status(200).json({
@@ -45,7 +46,7 @@ app.get("/api/v1/products",async(req,res)=>{
     })
 })
 
-//patch api to update a product
+// //patch api to update a product 
 app.patch("/api/v1/products/:productId",async(req,res)=>{
     const{productId} = req.params;
     const data = req.body;
@@ -71,7 +72,7 @@ app.patch("/api/v1/products/:productId",async(req,res)=>{
     })
 })
 
-//delete api to delete a product 
+// //delete api to delete a product 
 
 app.delete("/api/v1/products/:productId",async(req,res)=>{
     const{productId} = req.params;
@@ -89,11 +90,12 @@ app.delete("/api/v1/products/:productId",async(req,res)=>{
     alldata.splice(idx,1);
 
     await saveFile("./data.json",alldata);
-    res.status(204).json({
+    res.status(200).json({
         isSuccess:"true",
         message:"Item deleted sucessfully"
     })
 })
+
 
 app.listen(3900,()=>{
     console.log("-----------server started--------------")

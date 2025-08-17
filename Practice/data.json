@@ -14,5 +14,11 @@
     "quantity": 10,
     "price": 2499.99,
     "id": "1ed85caa-16a3-4f86-b2a4-9bffc98d0856"
+  },
+  {
+    "item": "ee Box",
+    "quantity": 10,
+    "price": 340,
+    "id": "acfc8e0c-6e6a-4e20-8cfe-c055b0f6a33a"
   }
 ]
