@@ -8,5 +8,11 @@
     "item": "bamboo sticks",
     "quantity": 20,
     "id": "4f71bfde-65a7-4daf-96a4-57cf213fa464"
+  },
+  {
+    "item": "Mobile Phone",
+    "quantity": 10,
+    "price": 2499.99,
+    "id": "1ed85caa-16a3-4f86-b2a4-9bffc98d0856"
   }
 ]
