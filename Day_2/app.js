@@ -4,7 +4,9 @@ const { apiRouter } = require('./api/v1/routes');
 
 const app = express();
 
-app.use(morgan('dev')) // App level(global) middleware runs on Every request
+app.use(express.json());
+
+app.use(morgan('dev')) // App level (global) middleware runs on Every request
 
 app.get("/",(req,res)=>{
     res.status(200).json({

@@ -1,26 +1,16 @@
 const express = require('express');
+const { validationForCreatingOrder, validationForUpdatingOrder } = require('./dto');
+const { createOrderController, getOrdersController, updateOrderController } = require('./controller');
 
 const orderRouter = express.Router();
 
-orderRouter.get("/",(req,res)=>{
-    res.status(200).json({
-        isSucess:"true",
-        message:"Orders(GET) is running fine"
-    })
-})
+orderRouter.get("/",getOrdersController)
 
-orderRouter.post("/",(req,res)=>{
-    res.status(200).json({
-        isSucess:"true",
-        message:"Orders(POST) is running fine"
-    })
-})
-orderRouter.patch("/",(req,res)=>{
-    res.status(200).json({
-        isSucess:"true",
-        message:"Orders(PATCH) is running fine"
-    })
-})
+orderRouter.post("/",validationForCreatingOrder,createOrderController)
+
+orderRouter.patch("/",validationForUpdatingOrder,updateOrderController)
+
+
 orderRouter.delete("/",(req,res)=>{
     res.status(200).json({
         isSucess:"true",

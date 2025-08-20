@@ -1,0 +1,32 @@
+[
+  {
+    "ItemName": "a-box",
+    "price": 40,
+    "quantity": 90,
+    "id": "f6684a81-2914-4a74-a579-a92d89bee263"
+  },
+  {
+    "ItemName": "bba-box",
+    "price": 40,
+    "quantity": 90,
+    "id": "1dafc13b-5e15-466e-b50e-d70b741dac80"
+  },
+  {
+    "ItemName": "c-box",
+    "price": 40,
+    "quantity": 90,
+    "id": "60f7bfc9-499d-42bd-a77a-abe8ae9daa0d"
+  },
+  {
+    "ItemName": "d-box",
+    "price": 40,
+    "quantity": 90,
+    "id": "fb172817-4912-45e4-8dad-d3bfcfe46cd2"
+  },
+  {
+    "ItemName": "e-box",
+    "price": 40,
+    "quantity": 90,
+    "id": "ec57388d-e393-426e-b9a2-18fba9fca2e1"
+  }
+]
