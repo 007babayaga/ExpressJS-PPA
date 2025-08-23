@@ -28,5 +28,11 @@
     "price": 40,
     "quantity": 90,
     "id": "ec57388d-e393-426e-b9a2-18fba9fca2e1"
+  },
+  {
+    "ItemName": "tigerBrand-Lighter-Boxx",
+    "price": 4,
+    "quantity": 10,
+    "id": "f9707f0a-dfa0-4632-9ac3-79dc24069758"
   }
 ]
