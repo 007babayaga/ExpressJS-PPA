@@ -100,16 +100,28 @@
 // })
 
 //Trying to design Library system using MVC architecture and file system
-const express = require('express');
-const morgan = require('morgan');
-const { apiRouter } = require('./api/routes');
+// const express = require('express');
+// const morgan = require('morgan');
+// const { apiRouter } = require('./api/routes');
 
-const app = express();
-app.use(morgan('dev'));
-app.use(express.json());
+// const app = express();
+// app.use(morgan('dev'));
+// app.use(express.json());
 
-app.use("/api/v1",apiRouter)
+// app.use("/api/v1",apiRouter)
 
-app.listen(4000,()=>{
-    console.log("-------------server started----------")
-})
+// app.listen(4000,()=>{
+//     console.log("-------------server started----------")
+// })
+const mongoose = require('mongoose');
+
+const DbConnection = async()=>{
+    try{
+        await mongoose.connect('mongodb+srv://rajat-MERN-developer:Rajat123@cluster0.nw5hcy4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        console.log("-----------DB connected---------------")
+    }
+    catch(err){
+        console.log("Error in database Connection",err.message);
+    }
+}
+DbConnection();
