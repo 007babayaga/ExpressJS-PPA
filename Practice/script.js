@@ -113,11 +113,12 @@
 // app.listen(4000,()=>{
 //     console.log("-------------server started----------")
 // })
+require('dotenv').config()
 const mongoose = require('mongoose');
 
 const DbConnection = async()=>{
     try{
-        await mongoose.connect('mongodb+srv://rajat-MERN-developer:Rajat123@cluster0.nw5hcy4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        await mongoose.connect(process.env.MONGO_DB_URL)
         console.log("-----------DB connected---------------")
     }
     catch(err){
