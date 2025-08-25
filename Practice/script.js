@@ -113,16 +113,52 @@
 // app.listen(4000,()=>{
 //     console.log("-------------server started----------")
 // })
-require('dotenv').config()
-const mongoose = require('mongoose');
+// require('dotenv').config()
+// const mongoose = require('mongoose');
 
-const DbConnection = async()=>{
+// const DbConnection = async()=>{
+//     try{
+//         await mongoose.connect(process.env.MONGO_DB_URL)
+//         console.log("-----------DB connected---------------")
+//     }
+//     catch(err){
+//         console.log("Error in database Connection",err.message);
+//     }
+// }
+// DbConnection();
+require('dotenv').config()
+require("./config/db");
+const express = require('express');
+const morgan = require('morgan');
+const { StudentModel } = require('./Models/StudentSchema');
+
+const app = express();
+
+app.use(morgan('dev'));
+app.use(express.json());
+
+app.post("/",async(req,res)=>{
     try{
-        await mongoose.connect(process.env.MONGO_DB_URL)
-        console.log("-----------DB connected---------------")
+        const data = req.body;
+        await StudentModel.create(data);
+        res.status(201).json({
+            isSuccess:true,
+            message:"Student Entry Successfull"
+        })
     }
     catch(err){
-        console.log("Error in database Connection",err.message);
+        if(err.code=="11000"){
+            res.status(500).json({
+            message:"Server Side Error"
+        })
+        }
+        console.log(err);
+        res.status(400).json({
+            message:"Enter required fields"
+        })
     }
-}
-DbConnection();
+})
+
+app.listen(4000,()=>{
+    console.log("----------------server started---------")
+})

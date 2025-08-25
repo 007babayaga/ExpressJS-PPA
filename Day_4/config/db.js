@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGO_DB_URL,
     {
-        dbName:"Day_4_express",
+        dbName:"Day-4-express",
     }
 ).then(()=>{
     console.log("-----------Database connected✅-----------------")
