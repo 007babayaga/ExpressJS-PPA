@@ -126,39 +126,57 @@
 //     }
 // }
 // DbConnection();
+// require('dotenv').config()
+// require("./config/db");
+// const express = require('express');
+// const morgan = require('morgan');
+// const { StudentModel } = require('./Models/StudentSchema');
+
+// const app = express();
+
+// app.use(morgan('dev'));
+// app.use(express.json());
+
+// app.post("/",async(req,res)=>{
+//     try{
+//         const data = req.body;
+//         await StudentModel.create(data);
+//         res.status(201).json({
+//             isSuccess:true,
+//             message:"Student Entry Successfull"
+//         })
+//     }
+//     catch(err){
+//         if(err.code=="11000"){
+//             res.status(500).json({
+//             message:"Server Side Error"
+//         })
+//         }
+//         console.log(err);
+//         res.status(400).json({
+//             message:"Enter required fields"
+//         })
+//     }
+// })
+
+// app.listen(4000,()=>{
+//     console.log("----------------server started---------")
+// })
+
+
 require('dotenv').config()
-require("./config/db");
+require("./config/db")
+
 const express = require('express');
 const morgan = require('morgan');
-const { StudentModel } = require('./Models/StudentSchema');
+const { apiRouter } = require('./api/routes');
 
 const app = express();
-
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.post("/",async(req,res)=>{
-    try{
-        const data = req.body;
-        await StudentModel.create(data);
-        res.status(201).json({
-            isSuccess:true,
-            message:"Student Entry Successfull"
-        })
-    }
-    catch(err){
-        if(err.code=="11000"){
-            res.status(500).json({
-            message:"Server Side Error"
-        })
-        }
-        console.log(err);
-        res.status(400).json({
-            message:"Enter required fields"
-        })
-    }
-})
+app.use("/api/v1",apiRouter)
 
 app.listen(4000,()=>{
-    console.log("----------------server started---------")
+    console.log("-----------------server Started--------------")
 })

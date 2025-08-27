@@ -1,10 +1,8 @@
 const express = require('express');
-const { booksRouter } = require('./v1/Books/routes');
-const { booksUpdationRouter } = require('./v1/BooksUpdation/routes');
+const { contactRouter } = require('./v1/contacts/routes');
 
-const apiRouter = express.Router({ mergeParams: true });
+const apiRouter = express.Router();
 
-apiRouter.use("/books",booksRouter)
-apiRouter.use("/books/:bookId",booksUpdationRouter);
+apiRouter.use("/contacts",contactRouter)
 
 module.exports={apiRouter}
