@@ -59,7 +59,7 @@ const validateUpdateContact = (req,res,next)=>{
             return;
         }
         const emailRegex =  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*\.(com|net|org)$/;
-        if(email && emailRegex.test(email)){
+        if(email && !emailRegex.test(email)){
             res.status(400).json({
                 isSuccess:false,
                 message:"Email should match the Regex"

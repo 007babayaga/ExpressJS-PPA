@@ -4,12 +4,12 @@ const createContactController = async(req,res)=>{
     try{
         console.log("-----------inside createContactController")
         const data = req.body;
-        const contacts = await contactsModel.create(data);
+        await contactsModel.create(data);
         res.status(201).json({
             isSuccess:true,
             message:"Contacts Added Successfully",
             contact:{
-                contacts
+                data
             }
         })
     }

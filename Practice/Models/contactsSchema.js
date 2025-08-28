@@ -15,6 +15,7 @@ const contactsSchema = new Schema({
     },
     email:{
         type:String,
+        require:true,
         unique:true,
         trim:true,
         match:[/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/]
