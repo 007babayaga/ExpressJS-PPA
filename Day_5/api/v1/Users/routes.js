@@ -1,5 +1,5 @@
 const express = require('express');
-const { productsRouter } = require('./Products/routes');
+const { productsRouter } = require('../Products/routes');
 
 const apiRouter = express.Router();
 

@@ -33,6 +33,7 @@ const createProductController = async(req,res)=>{
 
 const getProductsController =async(req,res)=>{
     try{
+        console.log("-----------inside getProductsController------------ ")
         const result = await productModel.find();
         res.status(200).json({
             isSuccess:true,
@@ -43,7 +44,7 @@ const getProductsController =async(req,res)=>{
         })
     }
     catch(err){
-        console.log("erorr in getting products");
+        console.log("erorr in getProductsController");
         res.status(500).json({
             isSuccess:false,
             message:"Server is unable to fetch products"
@@ -114,4 +115,58 @@ const deleteProductController = async(req,res)=>{
         })
     }
 }
-module.exports={createProductController,getProductsController,updateProductController,deleteProductController}
+
+const listProductController = async(req,res)=>{
+    try{
+        console.log("-----------inside listProductController------------ ")
+        const {limit,page,select="title,price,quantity",q=" ",maxPrice,minPrice} = req.query;
+
+        const selectedItems = select.replaceAll("," , " ");
+
+        const searchRegex = new RegExp(q,"ig");
+
+        const limitNum = parseInt(limit) || 4;
+        const pageNum= parseInt(page)|| 1;
+        const skipNum = (pageNum-1) * limitNum;
+        const query = productModel.find(); // abhi seedha mongoose --> mongoDb document par nhi jayega abhi sirf query le rha hai
+
+        if(maxPrice && !Number.isNaN(Number(maxPrice))){
+            query.where("price").lte(maxPrice);
+        }
+        if(minPrice && !Number.isNaN(Number(minPrice))){
+            query.where("price").gte(minPrice);
+        }
+        query.select(selectedItems);       // ye  selct ki query
+
+        query.or([
+            {title:searchRegex},
+            {description:searchRegex},                              // ye  search ki query
+        ])    
+
+        const totalDocuments = await query.clone().countDocuments();
+
+        query.skip(skipNum);               // ye  limit ki query
+        query.limit(limitNum);             // ye  Skip ki query
+
+        const products = await query       // Now All the Queries are Completed Now go to the Database and Execute Them
+        res.status(200).json({
+            isSuccess:true,
+            message:"Products fetched successfully",
+            data:{
+                products,
+                total:totalDocuments,
+                skipNum,
+                limit: Math.min(limitNum,products.length)
+            }
+        })
+    }
+    catch(err){
+        console.log("erorr in listProductController",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Server is unable to fetch products"
+        })
+    }
+
+}
+module.exports={createProductController,getProductsController,updateProductController,deleteProductController,listProductController}

@@ -117,5 +117,34 @@ const validateDeleteProduct = (req,res,next)=>{
     }
 }
 
+const validatelistProduct  = (req,res,next)=>{
+    try{
+        console.log("--------------- Inside validatelistProduct");
+        const{limit,page}= req.query;
+        if(limit<=0){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter a valid Limit"
+            })
+            return
+        }
+        if(page<=0){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter a valid pageNo.."
+            })
+            return
+        }
+        next();
+    }
+    catch(err){
+        console.log("Error in validatelistProduct",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Validation failed  for validatelistProduct"
+        })
+    }
+}
 
-module.exports={validateCreateProduct,updateProductValidator,validateDeleteProduct}
+
+module.exports={validateCreateProduct,updateProductValidator,validateDeleteProduct,validatelistProduct}

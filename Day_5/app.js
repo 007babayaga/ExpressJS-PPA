@@ -2,7 +2,7 @@ require('dotenv').config()
 require("./config/db.js")
 const express = require('express');
 const morgan = require('morgan');
-const { apiRouter } = require('./api/v1/routes.js');
+const { apiRouter } = require('./api/v1/Users/routes.js');
 
 const PORT = process.env.PORT || 3900;
 const app = express();

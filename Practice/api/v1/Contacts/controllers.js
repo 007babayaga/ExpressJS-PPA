@@ -119,6 +119,39 @@ const deleteContactController = async(req,res)=>{
     }
 }
 
+const getListContactController = async(req,res)=>{
+    try{
+        console.log("---------------Inside getListContactController")
+        const {limit,page} = req.query;
+        const limitNum = parseInt(limit) || 4;
+        const pageNum = parseInt(page) || 1;
+        const skip = (pageNum-1) * limitNum;
+    
+        const query = contactsModel.find();
+    
+        query.skip(skip);
+        query.limit(limitNum);
+        const contacts = await query;
+
+        res.status(200).json({
+            isSuccess:true,
+            message:"Contacts fetched Successfully",
+            data:{
+                contacts,
+                skip,
+                limit:Math.min(limitNum,contacts.length)
+            }
+        })
+    }
+    catch(err){
+        console.log("Error in getListContactController",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Error in getting List Items"
+        })
+    }
+}
 
 
-module.exports={createContactController,getContactController,updateContactController,deleteContactController}
+
+module.exports={createContactController,getContactController,updateContactController,deleteContactController,getListContactController}
