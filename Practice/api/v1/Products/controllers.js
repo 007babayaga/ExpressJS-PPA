@@ -46,38 +46,39 @@ const getProductController = async(req,res)=>{
 const listProductController = async(req,res)=>{
     try{
         console.log("--------------inside listProductController")
-
-        const{limit,page,select="title price quantity",q=""} = req.query
-
+        const {page,limit,select="title,price,description",q="",minPrice,maxPrice}= req.query;
         const selectedItems = select.replaceAll(","," ");
-        const limitNum = parseInt(limit) || 4;
-        const pageNum = parseInt(page) || 1;
+        const searchRegEx = new RegExp(q,"ig");
+        const pageNum = parseInt(page)|| 1
+        const limitNum = parseInt(limit) || 4
+        const skip = (pageNum-1) *limitNum;
 
-        const regEx = new RegExp(q,"ig");
+        const query = ProductModel.find();
 
-        const skip = (pageNum-1)*limit;
-
-        const query =  ProductModel.find();
-        query.select(selectedItems)
+        query.select(selectedItems);
         query.or([
-            {title:regEx},
-            {description:regEx}
+            {"title":searchRegEx},
+            {"description":searchRegEx}
         ])
-        const AllItems = await query.clone().countDocuments();
+        query.where("title").equals("Red Lipstick")
         
-        query.skip(skip)
+        const totalItems =  await query.clone().countDocuments();
+        
+        query.skip(skip);
         query.limit(limitNum);
+        
+        const items = await query;
+        
 
-        const totalItems = await query
         res.status(200).json({
             isSuccess:true,
             message:"Fetched SuccessFully",
             Items:{
-                totalItems,
-                total:AllItems,
-                skip,
-                limit:Math.min(limitNum,totalItems.length)
-            }
+                FetchedItems:items
+            },
+            total:totalItems,
+            skip,
+            limit:limitNum,
         })
     }
     catch(err){
