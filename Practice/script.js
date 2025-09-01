@@ -169,12 +169,17 @@ require("./config/db")
 
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors')
 const { apiRouter } = require('./api/routes');
 
 const app = express();
+
 app.use(morgan('dev'));
 app.use(express.json());
 
+app.use(cors({
+    origin:process.env.FRONTEND_URL
+}))
 app.use("/api/v1",apiRouter)
 
 app.listen(4000,()=>{

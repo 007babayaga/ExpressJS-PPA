@@ -122,15 +122,17 @@ const deleteContactController = async(req,res)=>{
 const getListContactController = async(req,res)=>{
     try{
         console.log("---------------Inside getListContactController")
-        const {limit,page} = req.query;
+        const {limit,page,select="name,email"} = req.query;
         const limitNum = parseInt(limit) || 4;
         const pageNum = parseInt(page) || 1;
         const skip = (pageNum-1) * limitNum;
+        const selectedItems = select.replaceAll(","," ");
     
         const query = contactsModel.find();
     
         query.skip(skip);
         query.limit(limitNum);
+        query.select(selectedItems)
         const contacts = await query;
 
         res.status(200).json({
