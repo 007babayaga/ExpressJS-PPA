@@ -34,12 +34,12 @@ const createProductController = async(req,res)=>{
 const getProductsController =async(req,res)=>{
     try{
         console.log("-----------inside getProductsController------------ ")
-        const result = await productModel.find();
+        const products = await productModel.find();
         res.status(200).json({
             isSuccess:true,
             message:"Products fetched successfully",
             data:{
-                result
+                products
             }
         })
     }
@@ -140,7 +140,7 @@ const listProductController = async(req,res)=>{
 
         query.or([
             {title:searchRegex},
-            {description:searchRegex},                              // ye  search ki query
+            {description:searchRegex},      // ye  search ki query
         ])    
 
         const totalDocuments = await query.clone().countDocuments();
