@@ -119,13 +119,16 @@ const deleteProductController = async(req,res)=>{
 const listProductController = async(req,res)=>{
     try{
         console.log("-----------inside listProductController------------ ")
-        const {limit,page,select="title,price,quantity",q=" ",maxPrice,minPrice} = req.query;
+        const {limit,page,select="title,price,quantity images",q=" ",maxPrice,minPrice} = req.query;
 
         const selectedItems = select.replaceAll("," , " ");
 
         const searchRegex = new RegExp(q,"ig");
 
-        const limitNum = parseInt(limit) || 4;
+        let limitNum = parseInt(limit) || 4;
+        if(limitNum>=30){
+            limitNum=30;
+        }
         const pageNum= parseInt(page)|| 1;
         const skipNum = (pageNum-1) * limitNum;
         const query = productModel.find(); // abhi seedha mongoose --> mongoDb document par nhi jayega abhi sirf query le rha hai

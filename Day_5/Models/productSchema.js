@@ -6,7 +6,6 @@ const productSchema = new Schema({
     title:{
         type:String,
         required:true,
-        min:3,
         unique:true,
         trim:true
     },
@@ -20,6 +19,7 @@ const productSchema = new Schema({
         default:1,
     },
     description:String,
+    images:[String]
 },{
     versionKey:false,
     timestamps:true,
