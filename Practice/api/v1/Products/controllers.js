@@ -46,40 +46,33 @@ const getProductController = async(req,res)=>{
 const listProductController = async(req,res)=>{
     try{
         console.log("--------------inside listProductController")
-        const {page,limit,select="title,price,description",q="",minPrice,maxPrice}= req.query;
-        const selectedItems = select.replaceAll(","," ");
-        const searchRegEx = new RegExp(q,"ig");
-        const pageNum = parseInt(page)|| 1
-        const limitNum = parseInt(limit) || 4
-        const skip = (pageNum-1) *limitNum;
+        const{page,limit,q=""} = req.query;
+        const serachRegex = new RegExp(q,"ig");
+
+        const pageNum = parseInt(page)|| 1;
+        const limitNum = parseInt(limit)|| 5;
+        const skip = (pageNum-1) * limitNum;
 
         const query = ProductModel.find();
-
-        query.select(selectedItems);
         query.or([
-            {"title":searchRegEx},
-            {"description":searchRegEx}
+            {"title":serachRegex},
+            {"description":serachRegex}
         ])
-        query.where("title").equals("Red Lipstick")
         
-        const totalItems =  await query.clone().countDocuments();
-        
+        const total =  await query.clone().countDocuments();
         query.skip(skip);
         query.limit(limitNum);
-        
-        const items = await query;
-        
 
+        const product = await query;
         res.status(200).json({
             isSuccess:true,
-            message:"Fetched SuccessFully",
-            Items:{
-                FetchedItems:items
-            },
-            total:totalItems,
-            skip,
-            limit:limitNum,
+            message:"Items fetched Successfully",
+            product:product,
+            Total:total,
+            skipItems:skip,
+            limitItem:limitNum
         })
+
     }
     catch(err){
         console.log("Error in listProductController",err.message);
@@ -89,5 +82,7 @@ const listProductController = async(req,res)=>{
         })
     }
 }
+
+
 
 module.exports={createProductController,getProductController,listProductController}

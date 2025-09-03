@@ -17,7 +17,6 @@ const ProductSchema = new Schema({
     quantity:{
         type:Number,
         default:1,
-        required:true,
     },
     description:{
         type:String,
@@ -29,6 +28,6 @@ const ProductSchema = new Schema({
 })
 
 
-const ProductModel = model("Item",ProductSchema);
+const ProductModel = model("product",ProductSchema);
 
 module.exports={ProductModel}
