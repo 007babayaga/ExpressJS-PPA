@@ -106,14 +106,14 @@ const validatelistProduct  = (req,res,next)=>{
     try{
         console.log("--------------- Inside validatelistProduct");
         const{limit,page}= req.query;
-        if(limit<=0){
+        if(limit && limit<=0){
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter a valid Limit"
             })
             return
         }
-        if(page<=0){
+        if(page && page<=0){
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter a valid pageNo.."
