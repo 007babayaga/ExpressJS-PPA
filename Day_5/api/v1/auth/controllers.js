@@ -1,6 +1,5 @@
 const { userModel } = require("../../../Models/userSchema");
 
-
 const userSignUpController = async(req,res)=>{
     try{
         console.log("---------Inside userSignUpController ")

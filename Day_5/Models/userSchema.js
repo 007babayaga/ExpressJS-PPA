@@ -54,7 +54,7 @@ userSchema.pre("updateMany",function(){
 
 userSchema.pre("save",async function(next){
     if(this.isModified("password")){
-        this.password= await bcrypt.hash(this.password.toString(),11)
+        this.password = await bcrypt.hash(this.password.toString(),11)
     }
     next();
 })
