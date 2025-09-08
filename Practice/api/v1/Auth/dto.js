@@ -1,15 +1,8 @@
 const userSignUpValidator = (req,res,next)=>{
     try{
         console.log("-----------Inside userSignUpValidator--");
-        const{name,email,password} = req.body;
-
-        if(!name|| name.length<3){
-            res.status(400).json({
-                isSuccess:false,
-                message:"Enter a Valid Name"
-            })
-            return
-        }
+        const{email,password} = req.body;
+        
         const reGmail = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
         if(!email || !reGmail.test(email)){
             res.status(400).json({

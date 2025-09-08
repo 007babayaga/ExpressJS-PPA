@@ -3,9 +3,8 @@ const { userModel } = require("../../../Models/userSchema");
 const createUserController = async(req,res)=>{
     try{
         console.log("-----------Inside createUserController--");
-        const{name,email,password} = req.body;
+        const{email,password} = req.body;
         const newUser = await userModel.create({
-            name,
             password,
             email,
         })
