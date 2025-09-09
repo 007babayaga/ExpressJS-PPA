@@ -1,6 +1,6 @@
 const userSignUpValidator = (req,res,next)=>{
     try{
-        console.log("---------Inside UserSignUpValidator ")
+        console.log("---------Inside UserSignUpValidator-------- ")
         const{name,email,otp,password} = req.body;
 
         if(!name || name.length<3){
@@ -29,7 +29,7 @@ const userSignUpValidator = (req,res,next)=>{
         if(!otp){
             res.status(400).json({
                 isSuccess:false,
-                message:"Enter valid OTP  "
+                message:"Enter valid OTP "
             })
             return
         }

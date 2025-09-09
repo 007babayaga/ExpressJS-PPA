@@ -21,7 +21,14 @@ const userSignUpController = async(req,res)=>{
     }
     catch(err){
         console.log("Error in userSignUpController:",err.message);
-        if(err.name==="ValidationError" || err.code ===11000){
+        if( err.code ===11000){
+            res.status(400).json({
+                isSeccess:false,
+                message:"User Already exist! Please Login"
+            })
+            return
+        }
+        else if(err.name==="ValidationError" ){
             res.status(400).json({
                 isSeccess:false,
                 message:err.message
