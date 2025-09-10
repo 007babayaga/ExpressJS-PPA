@@ -1,7 +1,7 @@
 const userSignUpValidator = (req,res,next)=>{
     try{
         console.log("-----------Inside userSignUpValidator--");
-        const{email,password} = req.body;
+        const{email,password,otp} = req.body;
         
         const reGmail = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
         if(!email || !reGmail.test(email)){
@@ -15,6 +15,13 @@ const userSignUpValidator = (req,res,next)=>{
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter a Valid password"
+            })
+            return
+        }
+        if(!otp){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter a  otp"
             })
             return
         }
