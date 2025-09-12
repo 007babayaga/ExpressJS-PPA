@@ -9,7 +9,13 @@ const sendOtpController = async(req,res)=>{
         const otp = Math.floor(Math.random()*9000 +1000);
         
         //We send the Otp to email using EmailHelper file(NodeMailer)
-            await sendOtp(email,otp);
+        await sendOtp(email,otp);
+
+        //before storing otp I will check for Duplicate Document
+        const otpDoc = await otpModel.findOne({email});
+        if(otpDoc){
+            await otpModel.findOneAndDelete({email})
+        }
         
         //we will store it in the Db
         await otpModel.create({

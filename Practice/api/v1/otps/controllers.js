@@ -9,7 +9,12 @@ const { sendOtp } = require("../../../utils/emailHelper");
         const otp  = Math.floor(Math.random()*9000+1000);
         //send the Otp To email using Nodemailer
         await sendOtp(email,otp);
-        //save It into Database
+
+        //checking for older otps and delete them
+        const oldOtpDoc = await otpModel.findOne({email}).lean();
+        if(oldOtpDoc!=null){
+            await otpModel.findOneAndDelete({email}).lean();
+        }
         await otpModel.create({
             email,
             otp

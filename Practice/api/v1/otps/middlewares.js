@@ -4,8 +4,10 @@ const bcrypt = require('bcrypt');
 const otpMiddleware = async(req,res,next)=>{
     try{
         const{email,otp}= req.body;
-        console.log("Inside otpMiddleware-")
-        const otpdocs = await otpModel.findOne().where("email").equals(email).sort("-createdAt");
+
+        console.log("----------Inside otpMiddleware-")
+        const otpdocs = await otpModel.findOne().where("email").equals(email).sort("-createdAt").lean();
+        
         if(otpdocs==null){
             res.status(400).json({
                 isSuccess:false,

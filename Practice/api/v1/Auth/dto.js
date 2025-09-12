@@ -35,5 +35,35 @@ const userSignUpValidator = (req,res,next)=>{
         })
     }
 }
+const userLoginValidator = (req,res,next)=>{
+    try{
+        console.log("-----------Inside userLoginValidator--");
+        const{email,password,otp} = req.body;
+        
+        const reGmail = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if(!email || !reGmail.test(email)){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter a Valid Email"
+            })
+            return
+        }
+        if(!password || password.length<1){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter a Valid password"
+            })
+            return
+        }
+        next();
+    }
+    catch(err){
+        console.log("Error in userLoginValidator",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Internal server Error while Validating user Login"
+        })
+    }
+}
 
-module.exports={userSignUpValidator}
+module.exports={userSignUpValidator,userLoginValidator}
