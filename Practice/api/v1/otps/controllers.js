@@ -3,7 +3,7 @@ const { sendOtp } = require("../../../utils/emailHelper");
 
     const sendOtpController = async(req,res)=>{
     try{
-        console.log("Inside sendOtpController-")
+        console.log("---------Inside sendOtpController-")
         const{email}= req.body;
         //generate Otp
         const otp  = Math.floor(Math.random()*9000+1000);

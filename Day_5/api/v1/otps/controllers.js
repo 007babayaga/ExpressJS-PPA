@@ -8,7 +8,7 @@ const sendOtpController = async(req,res)=>{
 
         const otp = Math.floor(Math.random()*9000 +1000);
         
-        //We send the Otp to email using EmailHelper file
+        //We send the Otp to email using EmailHelper file(NodeMailer)
             await sendOtp(email,otp);
         
         //we will store it in the Db

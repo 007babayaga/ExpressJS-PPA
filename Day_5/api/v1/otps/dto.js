@@ -7,7 +7,7 @@ const validateEmail = (req,res,next)=>{
         if(!email || !emailRegex.test(email)){
             res.status(400).json({
                 isSuccess:false,
-                message:"Enter valid Email (format)"
+                message:"Enter valid Email "
             })
             return
         }

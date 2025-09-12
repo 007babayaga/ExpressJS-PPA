@@ -5,7 +5,7 @@ const validateOtpMiddleware = async(req,res,next)=>{
     try{
         console.log("---------Inside validateOtpMiddleware ")
         const{email,otp} = req.body;
-        const otpDoc = await otpModel.findOne().where("email").equals(email).sort("-createdAt")
+        const otpDoc = await otpModel.findOne().where("email").equals(email).sort("-createdAt").lean();
         if(otpDoc==null){
             res.status(400).json({
                 isSuccess:false,

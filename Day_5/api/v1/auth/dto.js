@@ -44,5 +44,37 @@ const userSignUpValidator = (req,res,next)=>{
         })
     }
 }
+const userLoginValidator = (req,res,next)=>{
+    try{
+        console.log("---------Inside userLoginValidator-------- ")
+        const{email,password} = req.body;
 
-module.exports={userSignUpValidator}
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if(!email || !emailRegex.test(email)){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter valid Email"
+            })
+            return
+        }
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).{8,10}$/;
+        if(!password || !passwordRegex.test(password)){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter valid Password "
+            })
+            return
+        }
+        next();
+    }
+
+    catch(err){
+        console.log("Error in userLoginValidator:",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:" Server Erorr in validating user Login  "
+        })
+    }
+}
+
+module.exports={userLoginValidator,userSignUpValidator}
