@@ -23,6 +23,13 @@ const createUserController = async(req,res)=>{
     }
     catch(err){
         console.log("Error in createUserController",err.message);
+        if(err.code===11000){
+            res.status(409).json({
+            isSuccess:false,
+            message:"user already exist please login"
+        })
+        return
+        }
         res.status(500).json({
             isSuccess:false,
             message:"Internal server Error while  creating user"

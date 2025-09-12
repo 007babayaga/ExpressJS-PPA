@@ -38,7 +38,7 @@ const userSignUpValidator = (req,res,next)=>{
 const userLoginValidator = (req,res,next)=>{
     try{
         console.log("-----------Inside userLoginValidator--");
-        const{email,password,otp} = req.body;
+        const{email,password} = req.body;
         
         const reGmail = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
         if(!email || !reGmail.test(email)){
