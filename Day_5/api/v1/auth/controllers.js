@@ -1,5 +1,6 @@
 const { userModel } = require("../../../Models/userSchema");
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken");
 
 const userSignUpController = async(req,res)=>{
     try{
@@ -66,10 +67,30 @@ const userLoginController = async(req,res)=>{
             })
             return
         }
+        const token = jwt.sign(
+            {
+            email:userdoc.email,
+            id:userdoc.id
+            },
+            process.env.JWT_SECRET,
+            {
+            expiresIn:60*60*24
+            }
+        )
+
+        res.cookie("authorization",token,{
+            httpOnly:true,
+            secure:true,
+            sameSite:"None",
+        })
 
         res.status(200).json({
             isSuccess:true,
-            message:"Login Success"
+            message:"Login Success",
+            // data:{
+            //     email:userdoc.email,
+            //     _id:userdoc.id
+            // }
         })
     }
     catch(err){
