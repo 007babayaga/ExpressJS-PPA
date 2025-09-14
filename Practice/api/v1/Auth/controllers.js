@@ -1,5 +1,6 @@
 const { userModel } = require("../../../Models/userSchema");
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 const createUserController = async(req,res)=>{
     try{
@@ -41,6 +42,7 @@ const userLoginController = async(req,res)=>{
         console.log("-----------Inside userLoginController--");
         const{email,password} = req.body;
         const useDocs = await userModel.findOne().where("email").equals(email).lean();
+
         if(useDocs==null){
             res.status(400).json({
                 isSuccess:false,
@@ -58,7 +60,22 @@ const userLoginController = async(req,res)=>{
             })
             return
         }
-        res.status(201).json({
+        const token = jwt.sign(
+            {
+                email:useDocs.email,
+                id:useDocs.id
+            },
+            process.env.JWT_KEY,
+            {
+                expiresIn:60*60*24
+            }            
+        )
+        res.cookie("authorization",token,{
+            httpOnly:true,
+            secure:true,
+            sameSite:"None",
+        })
+        res.status(200).json({
             isSuccess:true,
             message:"Logged in Successfully",
         })
