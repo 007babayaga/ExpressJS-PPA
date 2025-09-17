@@ -41,16 +41,16 @@ const userLoginController = async(req,res)=>{
     try{
         console.log("-----------Inside userLoginController--");
         const{email,password} = req.body;
-        const useDocs = await userModel.findOne().where("email").equals(email).lean();
+        const userDocs = await userModel.findOne().where("email").equals(email).lean();
 
-        if(useDocs==null){
+        if(userDocs==null){
             res.status(400).json({
                 isSuccess:false,
                 message:"Please SignUp First"
             })
             return
         }
-        const{password:hashedPass} = useDocs;
+        const{password:hashedPass} = userDocs;
         const isCorrect = await bcrypt.compare(password.toString(),hashedPass)
 
         if(!isCorrect){
@@ -62,8 +62,8 @@ const userLoginController = async(req,res)=>{
         }
         const token = jwt.sign(
             {
-                email:useDocs.email,
-                id:useDocs.id
+                email:userDocs.email,
+                id:userDocs.id
             },
             process.env.JWT_KEY,
             {

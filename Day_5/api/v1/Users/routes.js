@@ -1,15 +1,11 @@
 const express = require('express');
-const { productsRouter } = require('../Products/routes');
-const { authRouter } = require('../auth/routes');
-const { otpRouter } = require('../otps/routes');
+const { senduserInfoConroller } = require('./controllers');
+const { validateLoggedInUserMiddleware } = require('../../middleware');
 
-const apiRouter = express.Router();
+const userRouter = express.Router();
 
-apiRouter.use("/products",productsRouter);
-apiRouter.use("/auth",authRouter);
-apiRouter.use("/otps",otpRouter);
+userRouter.get("/me",validateLoggedInUserMiddleware,senduserInfoConroller); // 
 
-module.exports={apiRouter}
-
+module.exports={userRouter}
 
 
