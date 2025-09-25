@@ -7,7 +7,8 @@
       "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
-      ]
+      ],
+      "category": "beauty"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
-      ]
+      ],
+      "category": "beauty"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
-      ]
+      ],
+      "category": "beauty"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
-      ]
+      ],
+      "category": "beauty"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"
-      ]
+      ],
+      "category": "beauty"
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
         "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"
-      ]
+      ],
+      "category": "fragrances"
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
         "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"
-      ]
+      ],
+      "category": "fragrances"
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"
-      ]
+      ],
+      "category": "fragrances"
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
         "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"
-      ]
+      ],
+      "category": "fragrances"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
         "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"
-      ]
+      ],
+      "category": "fragrances"
     },
     {
       "id": 11,
@@ -109,7 +119,8 @@
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
-      ]
+      ],
+      "category": "furniture"
     },
     {
       "id": 12,
@@ -120,7 +131,8 @@
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
-      ]
+      ],
+      "category": "furniture"
     },
     {
       "id": 13,
@@ -131,7 +143,8 @@
         "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
         "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
         "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
-      ]
+      ],
+      "category": "furniture"
     },
     {
       "id": 14,
@@ -142,7 +155,8 @@
         "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
         "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
         "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
-      ]
+      ],
+      "category": "furniture"
     },
     {
       "id": 15,
@@ -153,7 +167,8 @@
         "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
         "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
         "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"
-      ]
+      ],
+      "category": "furniture"
     },
     {
       "id": 16,
@@ -162,7 +177,8 @@
       "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 17,
@@ -171,7 +187,8 @@
       "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 18,
@@ -180,7 +197,8 @@
       "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 19,
@@ -190,7 +208,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
         "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 20,
@@ -199,7 +218,8 @@
       "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 21,
@@ -208,7 +228,8 @@
       "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 22,
@@ -217,7 +238,8 @@
       "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 23,
@@ -226,7 +248,8 @@
       "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 24,
@@ -235,7 +258,8 @@
       "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 25,
@@ -244,7 +268,8 @@
       "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 26,
@@ -253,7 +278,8 @@
       "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 27,
@@ -262,7 +288,8 @@
       "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 28,
@@ -274,7 +301,8 @@
         "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
         "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
         "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 29,
@@ -283,7 +311,8 @@
       "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 30,
@@ -292,7 +321,8 @@
       "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 31,
@@ -301,7 +331,8 @@
       "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/lemon/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 32,
@@ -310,7 +341,8 @@
       "description": "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/milk/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 33,
@@ -319,7 +351,8 @@
       "description": "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/mulberry/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 34,
@@ -328,7 +361,8 @@
       "description": "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 35,
@@ -337,7 +371,8 @@
       "description": "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/potatoes/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 36,
@@ -346,7 +381,8 @@
       "description": "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 37,
@@ -355,7 +391,8 @@
       "description": "Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/red-onions/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 38,
@@ -364,7 +401,8 @@
       "description": "High-quality rice, a staple for various cuisines and a versatile base for many dishes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/rice/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 39,
@@ -373,7 +411,8 @@
       "description": "Assorted soft drinks in various flavors, perfect for refreshing beverages.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 40,
@@ -382,7 +421,8 @@
       "description": "Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 41,
@@ -392,7 +432,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/1.webp",
         "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/2.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 42,
@@ -401,7 +442,8 @@
       "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/water/1.webp"
-      ]
+      ],
+      "category": "groceries"
     },
     {
       "id": 43,
@@ -412,7 +454,8 @@
         "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp"
-      ]
+      ],
+      "category": "home-decoration"
     },
     {
       "id": 44,
@@ -421,7 +464,8 @@
       "description": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
       "images": [
         "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp"
-      ]
+      ],
+      "category": "home-decoration"
     },
     {
       "id": 45,
@@ -432,7 +476,8 @@
         "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp"
-      ]
+      ],
+      "category": "home-decoration"
     },
     {
       "id": 46,
@@ -444,7 +489,8 @@
         "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/2.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
         "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp"
-      ]
+      ],
+      "category": "home-decoration"
     },
     {
       "id": 47,
@@ -453,7 +499,8 @@
       "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
       "images": [
         "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp"
-      ]
+      ],
+      "category": "home-decoration"
     },
     {
       "id": 48,
@@ -462,7 +509,8 @@
       "description": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 49,
@@ -472,7 +520,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/1.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/2.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 50,
@@ -481,7 +530,8 @@
       "description": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 51,
@@ -493,7 +543,8 @@
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/2.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/3.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/4.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 52,
@@ -502,7 +553,8 @@
       "description": "The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, sautéing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 53,
@@ -511,7 +563,8 @@
       "description": "The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 54,
@@ -520,7 +573,8 @@
       "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 55,
@@ -529,7 +583,8 @@
       "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 56,
@@ -541,7 +596,8 @@
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/2.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/3.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/4.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 57,
@@ -550,7 +606,8 @@
       "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 58,
@@ -559,7 +616,8 @@
       "description": "The Fork is a classic utensil for various dining and serving purposes. Its durable and ergonomic design makes it a reliable choice for everyday use.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 59,
@@ -568,7 +626,8 @@
       "description": "The Glass is a versatile and elegant drinking vessel suitable for a variety of beverages. Its clear design allows you to enjoy the colors and textures of your drinks.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 60,
@@ -577,7 +636,8 @@
       "description": "The Grater in Black is a handy kitchen tool for grating cheese, vegetables, and more. Its sleek design and sharp blades make food preparation efficient and easy.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 61,
@@ -586,7 +646,8 @@
       "description": "The Hand Blender is a versatile kitchen appliance for blending, pureeing, and mixing. Its compact design and powerful motor make it a convenient tool for various recipes.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/hand-blender/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 62,
@@ -595,7 +656,8 @@
       "description": "The Ice Cube Tray is a practical accessory for making ice cubes in various shapes. Perfect for keeping your drinks cool and adding a fun element to your beverages.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/ice-cube-tray/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 63,
@@ -604,7 +666,8 @@
       "description": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 64,
@@ -613,7 +676,8 @@
       "description": "The Knife is an essential kitchen tool for chopping, slicing, and dicing. Its sharp blade and ergonomic handle make it a reliable choice for food preparation.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/knife/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 65,
@@ -622,7 +686,8 @@
       "description": "The Lunch Box is a convenient and portable container for packing and carrying your meals. With compartments for different foods, it's perfect for on-the-go dining.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 66,
@@ -634,7 +699,8 @@
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/2.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/3.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/4.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 67,
@@ -644,7 +710,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/1.webp",
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/2.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 68,
@@ -653,7 +720,8 @@
       "description": "The Pan is a versatile and essential cookware item for frying, sautéing, and cooking various dishes. Its non-stick coating ensures easy food release and cleanup.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/pan/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 69,
@@ -662,7 +730,8 @@
       "description": "The Plate is a classic and essential dishware item for serving meals. Its durable and stylish design makes it suitable for everyday use or special occasions.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/plate/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 70,
@@ -671,7 +740,8 @@
       "description": "The Red Tongs are versatile kitchen tongs suitable for various cooking and serving tasks. Their vibrant color adds a pop of excitement to your kitchen utensils.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/red-tongs/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 71,
@@ -680,7 +750,8 @@
       "description": "The Silver Pot with Glass Cap is a stylish and functional cookware item for boiling, simmering, and preparing delicious meals. Its glass cap allows you to monitor cooking progress.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/silver-pot-with-glass-cap/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 72,
@@ -689,7 +760,8 @@
       "description": "The Slotted Turner is a kitchen utensil designed for flipping and turning food items. Its slotted design allows excess liquid to drain, making it ideal for frying and sautéing.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/slotted-turner/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 73,
@@ -698,7 +770,8 @@
       "description": "The Spice Rack is a convenient organizer for your spices and seasonings. Keep your kitchen essentials within reach and neatly arranged with this stylish spice rack.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 74,
@@ -707,7 +780,8 @@
       "description": "The Spoon is a versatile kitchen utensil for stirring, serving, and tasting. Its ergonomic design and durable construction make it an essential tool for every kitchen.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/spoon/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 75,
@@ -716,7 +790,8 @@
       "description": "The Tray is a functional and decorative item for serving snacks, appetizers, or drinks. Its stylish design makes it a versatile accessory for entertaining guests.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/tray/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 76,
@@ -725,7 +800,8 @@
       "description": "The Wooden Rolling Pin is a classic kitchen tool for rolling out dough for baking. Its smooth surface and sturdy handles make it easy to achieve uniform thickness.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/wooden-rolling-pin/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 77,
@@ -734,7 +810,8 @@
       "description": "The Yellow Peeler is a handy tool for peeling fruits and vegetables with ease. Its bright yellow color adds a cheerful touch to your kitchen gadgets.",
       "images": [
         "https://cdn.dummyjson.com/product-images/kitchen-accessories/yellow-peeler/1.webp"
-      ]
+      ],
+      "category": "kitchen-accessories"
     },
     {
       "id": 78,
@@ -745,7 +822,8 @@
         "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/1.webp",
         "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/2.webp",
         "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/3.webp"
-      ]
+      ],
+      "category": "laptops"
     },
     {
       "id": 79,
@@ -756,7 +834,8 @@
         "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/1.webp",
         "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/2.webp",
         "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/3.webp"
-      ]
+      ],
+      "category": "laptops"
     },
     {
       "id": 80,
@@ -767,7 +846,8 @@
         "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/1.webp",
         "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/2.webp",
         "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/3.webp"
-      ]
+      ],
+      "category": "laptops"
     },
     {
       "id": 81,
@@ -778,7 +858,8 @@
         "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp",
         "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
         "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp"
-      ]
+      ],
+      "category": "laptops"
     },
     {
       "id": 82,
@@ -789,7 +870,8 @@
         "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/1.webp",
         "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/2.webp",
         "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/3.webp"
-      ]
+      ],
+      "category": "laptops"
     },
     {
       "id": 83,
@@ -801,7 +883,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/4.webp"
-      ]
+      ],
+      "category": "mens-shirts"
     },
     {
       "id": 84,
@@ -813,7 +896,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/4.webp"
-      ]
+      ],
+      "category": "mens-shirts"
     },
     {
       "id": 85,
@@ -825,7 +909,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/4.webp"
-      ]
+      ],
+      "category": "mens-shirts"
     },
     {
       "id": 86,
@@ -837,7 +922,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/4.webp"
-      ]
+      ],
+      "category": "mens-shirts"
     },
     {
       "id": 87,
@@ -849,7 +935,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/4.webp"
-      ]
+      ],
+      "category": "mens-shirts"
     },
     {
       "id": 88,
@@ -861,7 +948,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/4.webp"
-      ]
+      ],
+      "category": "mens-shoes"
     },
     {
       "id": 89,
@@ -873,7 +961,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/4.webp"
-      ]
+      ],
+      "category": "mens-shoes"
     },
     {
       "id": 90,
@@ -885,7 +974,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/4.webp"
-      ]
+      ],
+      "category": "mens-shoes"
     },
     {
       "id": 91,
@@ -897,7 +987,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/4.webp"
-      ]
+      ],
+      "category": "mens-shoes"
     },
     {
       "id": 92,
@@ -909,7 +1000,8 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/3.webp",
         "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/4.webp"
-      ]
+      ],
+      "category": "mens-shoes"
     },
     {
       "id": 93,
@@ -920,7 +1012,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 94,
@@ -931,7 +1024,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 95,
@@ -942,7 +1036,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 96,
@@ -953,7 +1048,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 97,
@@ -964,7 +1060,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 98,
@@ -975,7 +1072,8 @@
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/1.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/2.webp",
         "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/3.webp"
-      ]
+      ],
+      "category": "mens-watches"
     },
     {
       "id": 99,
@@ -985,7 +1083,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/2.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 100,
@@ -996,7 +1095,8 @@
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/2.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/3.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 101,
@@ -1005,7 +1105,8 @@
       "description": "The Apple AirPods Max in Silver are premium over-ear headphones with high-fidelity audio, adaptive EQ, and active noise cancellation. Experience immersive sound in style.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 102,
@@ -1014,7 +1115,8 @@
       "description": "The Apple AirPower Wireless Charger provides a convenient way to charge your compatible Apple devices wirelessly. Simply place your devices on the charging mat for effortless charging.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpower-wireless-charger/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 103,
@@ -1023,7 +1125,8 @@
       "description": "The Apple HomePod Mini in Cosmic Grey is a compact smart speaker that delivers impressive audio and integrates seamlessly with the Apple ecosystem for a smart home experience.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 104,
@@ -1033,7 +1136,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 105,
@@ -1043,7 +1147,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 106,
@@ -1054,7 +1159,8 @@
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/2.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/3.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 107,
@@ -1063,7 +1169,8 @@
       "description": "The Beats Flex Wireless Earphones offer a comfortable and versatile audio experience. With magnetic earbuds and up to 12 hours of battery life, they are ideal for everyday use.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/beats-flex-wireless-earphones/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 108,
@@ -1075,7 +1182,8 @@
         "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/2.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/3.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/4.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 109,
@@ -1085,7 +1193,8 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/2.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 110,
@@ -1094,7 +1203,8 @@
       "description": "The Selfie Lamp with iPhone is a portable and adjustable LED light designed to enhance your selfies and video calls. Attach it to your iPhone for well-lit photos.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-lamp-with-iphone/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 111,
@@ -1103,7 +1213,8 @@
       "description": "The Selfie Stick Monopod is a extendable and foldable device for capturing the perfect selfie or group photo. Compatible with smartphones and cameras.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-stick-monopod/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 112,
@@ -1112,7 +1223,8 @@
       "description": "The TV Studio Camera Pedestal is a professional-grade camera support system for smooth and precise camera movements in a studio setting. Ideal for broadcast and production.",
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/1.webp"
-      ]
+      ],
+      "category": "mobile-accessories"
     },
     {
       "id": 113,
@@ -1124,7 +1236,8 @@
         "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/2.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/3.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/4.webp"
-      ]
+      ],
+      "category": "motorcycle"
     },
     {
       "id": 114,
@@ -1136,7 +1249,8 @@
         "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/2.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/3.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/4.webp"
-      ]
+      ],
+      "category": "motorcycle"
     },
     {
       "id": 115,
@@ -1148,7 +1262,8 @@
         "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/2.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/3.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/4.webp"
-      ]
+      ],
+      "category": "motorcycle"
     },
     {
       "id": 116,
@@ -1160,7 +1275,8 @@
         "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/2.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/3.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/4.webp"
-      ]
+      ],
+      "category": "motorcycle"
     },
     {
       "id": 117,
@@ -1172,7 +1288,8 @@
         "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/2.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/3.webp",
         "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/4.webp"
-      ]
+      ],
+      "category": "motorcycle"
     },
     {
       "id": 118,
@@ -1183,7 +1300,8 @@
         "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/2.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/3.webp"
-      ]
+      ],
+      "category": "skin-care"
     },
     {
       "id": 119,
@@ -1194,7 +1312,8 @@
         "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/2.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/3.webp"
-      ]
+      ],
+      "category": "skin-care"
     },
     {
       "id": 120,
@@ -1205,7 +1324,8 @@
         "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/2.webp",
         "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/3.webp"
-      ]
+      ],
+      "category": "skin-care"
     },
     {
       "id": 121,
@@ -1216,7 +1336,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 122,
@@ -1227,7 +1348,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 123,
@@ -1238,7 +1360,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 124,
@@ -1249,7 +1372,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 125,
@@ -1260,7 +1384,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 126,
@@ -1271,7 +1396,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 127,
@@ -1283,7 +1409,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/3.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/4.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 128,
@@ -1294,7 +1421,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 129,
@@ -1305,7 +1433,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 130,
@@ -1316,7 +1445,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 131,
@@ -1327,7 +1457,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 132,
@@ -1338,7 +1469,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 133,
@@ -1349,7 +1481,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 134,
@@ -1360,7 +1493,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 135,
@@ -1371,7 +1505,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 136,
@@ -1382,7 +1517,8 @@
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/1.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/2.webp",
         "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/3.webp"
-      ]
+      ],
+      "category": "smartphones"
     },
     {
       "id": 137,
@@ -1391,7 +1527,8 @@
       "description": "The American Football is a classic ball used in American football games. It is designed for throwing and catching, making it an essential piece of equipment for the sport.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 138,
@@ -1400,7 +1537,8 @@
       "description": "The Baseball Ball is a standard baseball used in baseball games. It features a durable leather cover and is designed for pitching, hitting, and fielding in the game of baseball.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 139,
@@ -1411,7 +1549,8 @@
         "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/1.webp",
         "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/2.webp",
         "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/3.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 140,
@@ -1420,7 +1559,8 @@
       "description": "The Basketball is a standard ball used in basketball games. It is designed for dribbling, shooting, and passing in the game of basketball, suitable for both indoor and outdoor play.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 141,
@@ -1429,7 +1569,8 @@
       "description": "The Basketball Rim is a sturdy hoop and net assembly mounted on a basketball backboard. It provides a target for shooting and scoring in the game of basketball.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/basketball-rim/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 142,
@@ -1438,7 +1579,8 @@
       "description": "The Cricket Ball is a hard leather ball used in the sport of cricket. It is bowled and batted in the game, and its hardness and seam contribute to the dynamics of cricket play.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-ball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 143,
@@ -1447,7 +1589,8 @@
       "description": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 144,
@@ -1459,7 +1602,8 @@
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/2.webp",
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/3.webp",
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/4.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 145,
@@ -1468,7 +1612,8 @@
       "description": "The Cricket Wicket is a set of three stumps and two bails, forming a wicket used in the sport of cricket. Batsmen aim to protect the wicket while scoring runs.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-wicket/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 146,
@@ -1477,7 +1622,8 @@
       "description": "The Feather Shuttlecock is used in the sport of badminton. It features natural feathers and is designed for high-speed play, providing stability and accuracy during matches.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/feather-shuttlecock/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 147,
@@ -1486,7 +1632,8 @@
       "description": "The Football, also known as a soccer ball, is the standard ball used in the sport of football (soccer). It is designed for kicking and passing in the game.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/football/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 148,
@@ -1495,7 +1642,8 @@
       "description": "The Golf Ball is a small ball used in the sport of golf. It features dimples on its surface, providing aerodynamic lift and distance when struck by a golf club.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/golf-ball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 149,
@@ -1504,7 +1652,8 @@
       "description": "The Iron Golf is a type of golf club designed for various golf shots. It features a solid metal head and is used for approach shots, chipping, and other golfing techniques.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 150,
@@ -1513,7 +1662,8 @@
       "description": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 151,
@@ -1522,7 +1672,8 @@
       "description": "The Tennis Ball is a standard ball used in the sport of tennis. It is designed for bouncing and hitting with tennis rackets during matches or practice sessions.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-ball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 152,
@@ -1531,7 +1682,8 @@
       "description": "The Tennis Racket is an essential piece of equipment used in the sport of tennis. It features a frame with strings and a grip, allowing players to hit the tennis ball.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 153,
@@ -1540,7 +1692,8 @@
       "description": "The Volleyball is a standard ball used in the sport of volleyball. It is designed for passing, setting, and spiking over the net during volleyball matches.",
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/1.webp"
-      ]
+      ],
+      "category": "sports-accessories"
     },
     {
       "id": 154,
@@ -1551,7 +1704,8 @@
         "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp"
-      ]
+      ],
+      "category": "sunglasses"
     },
     {
       "id": 155,
@@ -1562,7 +1716,8 @@
         "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/2.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/3.webp"
-      ]
+      ],
+      "category": "sunglasses"
     },
     {
       "id": 156,
@@ -1573,7 +1728,8 @@
         "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/1.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/2.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/3.webp"
-      ]
+      ],
+      "category": "sunglasses"
     },
     {
       "id": 157,
@@ -1584,7 +1740,8 @@
         "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/1.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/2.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/3.webp"
-      ]
+      ],
+      "category": "sunglasses"
     },
     {
       "id": 158,
@@ -1595,7 +1752,8 @@
         "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/1.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/2.webp",
         "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/3.webp"
-      ]
+      ],
+      "category": "sunglasses"
     },
     {
       "id": 159,
@@ -1607,7 +1765,8 @@
         "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/2.webp",
         "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/3.webp",
         "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/4.webp"
-      ]
+      ],
+      "category": "tablets"
     },
     {
       "id": 160,
@@ -1619,7 +1778,8 @@
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/2.webp",
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/3.webp",
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/4.webp"
-      ]
+      ],
+      "category": "tablets"
     },
     {
       "id": 161,
@@ -1631,7 +1791,8 @@
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/2.webp",
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/3.webp",
         "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/4.webp"
-      ]
+      ],
+      "category": "tablets"
     },
     {
       "id": 162,
@@ -1643,7 +1804,8 @@
         "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
         "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
         "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
-      ]
+      ],
+      "category": "tops"
     },
     {
       "id": 163,
@@ -1655,7 +1817,8 @@
         "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
         "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
         "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp"
-      ]
+      ],
+      "category": "tops"
     },
     {
       "id": 164,
@@ -1667,7 +1830,8 @@
         "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
         "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
         "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
-      ]
+      ],
+      "category": "tops"
     },
     {
       "id": 165,
@@ -1679,7 +1843,8 @@
         "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
         "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
         "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp"
-      ]
+      ],
+      "category": "tops"
     },
     {
       "id": 166,
@@ -1691,7 +1856,8 @@
         "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
         "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
         "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
-      ]
+      ],
+      "category": "tops"
     },
     {
       "id": 167,
@@ -1705,7 +1871,8 @@
         "https://cdn.dummyjson.com/product-images/vehicle/300-touring/4.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/300-touring/5.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/300-touring/6.webp"
-      ]
+      ],
+      "category": "vehicle"
     },
     {
       "id": 168,
@@ -1719,7 +1886,8 @@
         "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/4.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/5.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/6.webp"
-      ]
+      ],
+      "category": "vehicle"
     },
     {
       "id": 169,
@@ -1733,7 +1901,8 @@
         "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/5.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/6.webp"
-      ]
+      ],
+      "category": "vehicle"
     },
     {
       "id": 170,
@@ -1747,7 +1916,8 @@
         "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/4.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/5.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/6.webp"
-      ]
+      ],
+      "category": "vehicle"
     },
     {
       "id": 171,
@@ -1761,7 +1931,8 @@
         "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/5.webp",
         "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/6.webp"
-      ]
+      ],
+      "category": "vehicle"
     },
     {
       "id": 172,
@@ -1772,7 +1943,8 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/3.webp"
-      ]
+      ],
+      "category": "womens-bags"
     },
     {
       "id": 173,
@@ -1783,7 +1955,8 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
-      ]
+      ],
+      "category": "womens-bags"
     },
     {
       "id": 174,
@@ -1794,7 +1967,8 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp"
-      ]
+      ],
+      "category": "womens-bags"
     },
     {
       "id": 175,
@@ -1805,7 +1979,8 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/3.webp"
-      ]
+      ],
+      "category": "womens-bags"
     },
     {
       "id": 176,
@@ -1816,7 +1991,8 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp"
-      ]
+      ],
+      "category": "womens-bags"
     },
     {
       "id": 177,
@@ -1828,7 +2004,8 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/4.webp"
-      ]
+      ],
+      "category": "womens-dresses"
     },
     {
       "id": 178,
@@ -1840,7 +2017,8 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/4.webp"
-      ]
+      ],
+      "category": "womens-dresses"
     },
     {
       "id": 179,
@@ -1852,7 +2030,8 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/4.webp"
-      ]
+      ],
+      "category": "womens-dresses"
     },
     {
       "id": 180,
@@ -1864,7 +2043,8 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/4.webp"
-      ]
+      ],
+      "category": "womens-dresses"
     },
     {
       "id": 181,
@@ -1876,7 +2056,8 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/4.webp"
-      ]
+      ],
+      "category": "womens-dresses"
     },
     {
       "id": 182,
@@ -1887,7 +2068,8 @@
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/3.webp"
-      ]
+      ],
+      "category": "womens-jewellery"
     },
     {
       "id": 183,
@@ -1898,7 +2080,8 @@
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/3.webp"
-      ]
+      ],
+      "category": "womens-jewellery"
     },
     {
       "id": 184,
@@ -1909,7 +2092,8 @@
         "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/3.webp"
-      ]
+      ],
+      "category": "womens-jewellery"
     },
     {
       "id": 185,
@@ -1921,7 +2105,8 @@
         "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/4.webp"
-      ]
+      ],
+      "category": "womens-shoes"
     },
     {
       "id": 186,
@@ -1933,7 +2118,8 @@
         "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp"
-      ]
+      ],
+      "category": "womens-shoes"
     },
     {
       "id": 187,
@@ -1945,7 +2131,8 @@
         "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/4.webp"
-      ]
+      ],
+      "category": "womens-shoes"
     },
     {
       "id": 188,
@@ -1957,7 +2144,8 @@
         "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/4.webp"
-      ]
+      ],
+      "category": "womens-shoes"
     },
     {
       "id": 189,
@@ -1969,7 +2157,8 @@
         "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/3.webp",
         "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/4.webp"
-      ]
+      ],
+      "category": "womens-shoes"
     },
     {
       "id": 190,
@@ -1980,7 +2169,8 @@
         "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/3.webp"
-      ]
+      ],
+      "category": "womens-watches"
     },
     {
       "id": 191,
@@ -1991,7 +2181,8 @@
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/3.webp"
-      ]
+      ],
+      "category": "womens-watches"
     },
     {
       "id": 192,
@@ -2002,7 +2193,8 @@
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/3.webp"
-      ]
+      ],
+      "category": "womens-watches"
     },
     {
       "id": 193,
@@ -2013,7 +2205,8 @@
         "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/3.webp"
-      ]
+      ],
+      "category": "womens-watches"
     },
     {
       "id": 194,
@@ -2024,7 +2217,8 @@
         "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
         "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp"
-      ]
+      ],
+      "category": "womens-watches"
     }
   ],
   "total": 194,

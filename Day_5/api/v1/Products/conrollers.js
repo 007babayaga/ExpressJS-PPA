@@ -1,4 +1,5 @@
 
+const { CategoryModel } = require("../../../Models/productCategoriesSchema");
 const { productModel } = require("../../../Models/productSchema");
 
 const createProductController = async (req, res) => {
@@ -181,4 +182,101 @@ const listProductController = async (req, res) => {
     }
 
 }
-module.exports = { createProductController, getProductsController, updateProductController, deleteProductController, listProductController }
+const viewProductController = async (req, res) => {
+    try {
+        console.log("-----------Inside viewProductController----------")
+        const{productId} = req.params;
+
+        const item = await productModel.findById(productId);
+        res.status(200).json({
+            isSuccess:true,
+            message:"Product found SuccessFully",
+            data:{
+                product:item
+            }
+        })
+    }
+    catch (err) {
+        console.log("erorr in viewProductController", err.message);
+        res.status(500).json({
+            isSuccess: false,
+            message: "Server is unable to fetch products"
+        })
+    }
+
+}
+const createCategoryController = async (req, res) => {
+    try {
+        console.log("-----------Inside createCategoryController----------")
+        const{slug,name} = req.body;
+
+        const Category = await CategoryModel.create({
+            slug:slug,
+            name:name
+        });
+        res.status(201).json({
+            isSuccess:true,
+            message:"Category Added  SuccessFully",
+            data:{
+                productCategory:Category
+            }
+        })
+    }
+    catch (err) {
+        console.log("erorr in createCategoryController", err.message);
+        res.status(500).json({
+            isSuccess: false,
+            message: "Server is unable to Store product categories"
+        })
+    }
+
+}
+const getCategoryController = async (req, res) => {
+    try {
+        console.log("-----------Inside getCategoryController----------")
+
+        const Categories = await CategoryModel.find();
+
+        res.status(200).json({
+            isSuccess:true,
+            message:"Category Fetched  SuccessFully",
+            data:{
+                AllCategories:Categories
+            }
+        })
+    }
+    catch (err) {
+        console.log("erorr in getCategoryController", err.message);
+        res.status(500).json({
+            isSuccess: false,
+            message: "Server is unable to get Products Categories"
+        })
+    }
+
+}
+
+const getProductsByCategoryController = async (req, res) => {
+    try {
+        console.log("-----------Inside getProductsByCategoryController----------");
+        const{slug} = req.params;
+        const Allpdts = await productModel.find({"category":slug});
+        // console.log(Allpdts);
+
+        res.status(200).json({
+            isSuccess:true,
+            message:" Products by Category Fetched  SuccessFully",
+            data:{
+                categoryPdts:Allpdts
+            }
+        })
+    }
+    catch (err) {
+        console.log("erorr in getProductsByCategoryController", err.message);
+        res.status(500).json({
+            isSuccess: false,
+            message: "Server is unable to get Products by Categories"
+        })
+    }
+
+}
+module.exports = { createProductController, getProductsController, updateProductController, deleteProductController, listProductController ,viewProductController,createCategoryController,getCategoryController,getProductsByCategoryController}

@@ -18,7 +18,7 @@ const validateLoggedInUserMiddleware = (req,res,next)=>{
                 console.log("-------------Invalid Token❌------")
                 res.status(401).json({
                 isSuccess:false,
-                message:"User Not LoggedInn"
+                message:"User Not LoggedIn!!"
             })
             return
             }

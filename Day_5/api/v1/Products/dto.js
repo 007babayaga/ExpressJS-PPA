@@ -1,3 +1,4 @@
+const { productModel } = require("../../../Models/productSchema");
 
 const validateCreateProduct =(req,res,next)=>{
     try{
@@ -130,6 +131,50 @@ const validatelistProduct  = (req,res,next)=>{
         })
     }
 }
+const validateViewProduct  = async(req,res,next)=>{
+    try{
+        console.log("---------------Inside validateViewProduct--------- ");
+        const{productId} = req.params;
+
+        const product = await productModel.findById(productId);
+        if(!product){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Provide a valid Product ID "
+            })
+            return
+        }
+        next();
+    }
+    catch(err){
+        console.log("Error in validateViewProduct",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Validation failed  for validateViewProduct"
+        })
+    }
+}
+const validateCreatecategory  = async(req,res,next)=>{
+    try{
+        console.log("---------------Inside validateCreatecategory--------- ");
+        const{slug,name} = req.body;
+        if(!slug || !name){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Please Enter the Required Fields"
+            })
+            return;
+        }
+        next();
+    }
+    catch(err){
+        console.log("Error in validateCreatecategory",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Validation failed  for validateCreatecategory"
+        })
+    }
+}
 
 
-module.exports={validateCreateProduct,validateUpdateProduct,validateDeleteProduct,validatelistProduct}
+module.exports={validateCreateProduct,validateUpdateProduct,validateDeleteProduct,validatelistProduct,validateViewProduct,validateCreatecategory}

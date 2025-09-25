@@ -1,5 +1,6 @@
 const senduserInfoConroller = (req,res)=>{
     try{
+        console.log("---------------Inside senduserInfoConroller -----")
         const user = req.currentuser;
         res.status(200).json({
             isSuccess:true,
@@ -8,7 +9,6 @@ const senduserInfoConroller = (req,res)=>{
                 email:user.email
             }
         })
-        console.log("---------------Inside senduserInfoConroller -----")
     }
     catch(err){
         console.log("Error in senduserInfoConroller",err.message);

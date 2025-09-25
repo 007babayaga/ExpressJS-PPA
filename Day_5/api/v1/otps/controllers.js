@@ -38,4 +38,5 @@ const sendOtpController = async(req,res)=>{
     }
 }
 
+
 module.exports={sendOtpController}

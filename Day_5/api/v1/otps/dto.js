@@ -22,4 +22,6 @@ const validateEmail = (req,res,next)=>{
     }
 }
 
+
+
 module.exports={validateEmail}

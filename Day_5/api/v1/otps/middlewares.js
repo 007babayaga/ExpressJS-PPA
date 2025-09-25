@@ -20,7 +20,7 @@ const validateOtpMiddleware = async(req,res,next)=>{
         if(!isCorrect){
             res.status(400).json({
                 isSuccess:false,
-                message:"Invalid OTP"
+                message:"InCorrect OTP!!"
             })
             // We can also block the user after he has entered wrong otp for lets say 5 times(future use case)
             return

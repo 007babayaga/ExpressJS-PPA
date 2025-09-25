@@ -19,7 +19,11 @@ const productSchema = new Schema({
         default:1,
     },
     description:String,
-    images:[String]
+    images:[String],
+    category:{
+        type:String,
+        trim:true
+    }
 },{
     versionKey:false,
     timestamps:true,

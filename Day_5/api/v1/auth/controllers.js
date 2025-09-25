@@ -70,7 +70,7 @@ const userLoginController = async(req,res)=>{
         const token = jwt.sign(
             {
             email:userdoc.email,
-            id:userdoc.id
+            _id:userdoc._id
             },
             process.env.JWT_SECRET,
             {
@@ -103,4 +103,32 @@ const userLoginController = async(req,res)=>{
     }
 }
 
-module.exports={userSignUpController,userLoginController}
+const userLogoutController = async(req,res)=>{
+    try{
+        console.log("---------Inside userLogoutController----")
+
+        // For Logout just remove the Cookie to empty String
+        res.cookie("authorization","",{
+            httpOnly:true,
+            secure:true,
+            sameSite:"None",
+            maxAge:0
+        })
+        
+        res.status(200).json({
+            isSuccess:true,
+            message:"Logout Success"
+        })
+    }
+    catch(err){
+        console.log("Error in userLogoutController:",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Erorr in  user Logout"
+        })
+    }
+}
+
+
+
+module.exports={userSignUpController,userLoginController,userLogoutController}

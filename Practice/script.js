@@ -169,7 +169,8 @@ require("./config/db")
 
 const express = require('express');
 const morgan = require('morgan');
-const cors = require('cors')
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const { apiRouter } = require('./api/routes');
 
 const app = express();
@@ -178,11 +179,14 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true
-}))
-app.use("/api/v1",apiRouter)
+    origin: process.env.FRONTEND_URL,
+    credentials: true
+}));
 
-app.listen(4000,()=>{
+app.use(cookieParser());
+
+app.use("/api/v1", apiRouter);
+
+app.listen(4000, () => {
     console.log("-----------------server Started--------------")
-})
+});
