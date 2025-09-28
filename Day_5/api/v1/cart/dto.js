@@ -29,5 +29,34 @@ const addToCartValidator = (req,res,next)=>{
         })
     }
 }
+const removeFromCartValidator = (req,res,next)=>{
+    try{
+        console.log("---------------inside removeFromCartValidator---------")
+        const{productId} = req.params;
 
-module.exports={addToCartValidator}
+        if(!productId){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Please enter productId and userId"
+            })
+            return;
+        }
+        // if (!mongoose.isValidObjectId(productId) ) {
+        //     res.status(400).json({
+        //         isSuccess:false,
+        //         message:"Enter valid Ids"
+        //     })
+        //     return
+        // }
+        next();
+    }
+    catch(err){
+        console.log("Error in removeFromCartValidator",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Server Error in removeFromCartValidator"
+        })
+    }
+}
+
+module.exports={addToCartValidator,removeFromCartValidator}

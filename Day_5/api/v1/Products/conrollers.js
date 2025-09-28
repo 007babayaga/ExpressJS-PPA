@@ -260,8 +260,7 @@ const getProductsByCategoryController = async (req, res) => {
         console.log("-----------Inside getProductsByCategoryController----------");
         const{slug} = req.params;
         const Allpdts = await productModel.find({"category":slug});
-        // console.log(Allpdts);
-
+        
         res.status(200).json({
             isSuccess:true,
             message:" Products by Category Fetched  SuccessFully",
