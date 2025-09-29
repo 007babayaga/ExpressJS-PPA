@@ -1,30 +1,37 @@
+const { cartModel } = require("../../../Models/cartSchema");
 const { productModel } = require("../../../Models/productSchema");
 
 const placeOrderController = async(req,res)=>{
     try{
         console.log("---------------Inside placeOrderController----------");
-        const{products,address} = req.body;
+        const{address} = req.body;
+        const{_id:userId} = req.currentuser;
+
+        const cartItems = await cartModel.find({
+            user:userId
+        })
+        
         let allItemsAreInStock = true;
 
-        for(let product of products){
-            const{productId,quntity} = product;
+        for(let product of cartItems){
+            const{product:productId,cartQuantity:quantity} = product;
             const updatedProduct = await productModel.findByIdAndUpdate(productId,{
-                $inc:{quantity:-1*quntity}
+                $inc:{quantity : -1 * quantity}
             })
             if(updatedProduct && updatedProduct.quantity<0){
                 allItemsAreInStock=false;
             }
         }
         if(!allItemsAreInStock){
-            for(let product of products){
-            const{productId,quntity} = product;
+            for(let product of cartItems){
+            const{product:productId,cartQuantity:quantity} = product;
             await productModel.findByIdAndUpdate(productId,{
-                    $inc:{quantity:quntity}
-                })
+                $inc:{quantity : quantity}
+            })
             }
-            res.status(500).json({
+            res.status(400).json({
                 isSuccess:false,
-                message:"Some Items Are Out of Stcok"
+                message:" Item is Out of Stock"
             })
             return
         }
@@ -41,4 +48,5 @@ const placeOrderController = async(req,res)=>{
         })
     }
 }
+
 module.exports={placeOrderController}

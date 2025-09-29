@@ -20,7 +20,7 @@ const senduserInfoConroller = (req,res)=>{
         })
     }
 }
-const getUserInfoController = async(req,res)=>{
+const getUserDeatailsController = async(req,res)=>{
     try{
         console.log("---------------Inside getUserInfoController -----")
         const{_id} = req.currentuser;
@@ -44,4 +44,27 @@ const getUserInfoController = async(req,res)=>{
         })
     }
 }
-module.exports={senduserInfoConroller,getUserInfoController}
+const getUserAllDeatailsController = async(req,res)=>{
+    try{
+        console.log("---------------Inside getUserAllDeatailsController -----")
+        const{_id} = req.currentuser;
+
+        const userDetails = await userModel.findOne({"_id":_id});
+
+        res.status(200).json({
+            isSuccess:true,
+            message:"User Found",
+            data:{
+                userDetails
+            }
+        })
+    }
+    catch(err){
+        console.log("Error in getUserAllDeatailsController",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Internal Server Error"
+        })
+    }
+}
+module.exports={senduserInfoConroller,getUserDeatailsController,getUserAllDeatailsController}
