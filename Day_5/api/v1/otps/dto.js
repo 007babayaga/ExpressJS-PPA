@@ -3,8 +3,7 @@ const validateEmail = (req,res,next)=>{
         console.log("----------inside validateEmailforOtp------");
         const{email} = req.body;
         
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        if(!email || !emailRegex.test(email)){
+        if(!email){
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter valid Email "

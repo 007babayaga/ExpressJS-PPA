@@ -10,19 +10,19 @@ const userSignUpValidator = (req,res,next)=>{
             })
             return
         }
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        if(!email || !emailRegex.test(email)){
+
+        if(!email){
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter valid Email"
             })
             return
         }
-        const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).{8,10}$/;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).+$/;
         if(!password || !passwordRegex.test(password)){
             res.status(400).json({
                 isSuccess:false,
-                message:"Enter valid Password "
+                message:"Enter valid Password"
             })
             return
         }
@@ -49,8 +49,7 @@ const userLoginValidator = (req,res,next)=>{
         console.log("---------Inside userLoginValidator-------- ")
         const{email,password} = req.body;
 
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        if(!email || !emailRegex.test(email)){
+        if(!email){
             res.status(400).json({
                 isSuccess:false,
                 message:"Enter valid Email"

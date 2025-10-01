@@ -98,6 +98,38 @@ const removeFromCartController = async (req, res) => {
         })
     }
 }
+const deleteFromCartController = async (req, res) => {
+    try {
+        console.log("---------------Inside deleteFromCartController-------")
+        const { CartItemId } = req.params;
+        const { _id } = req.currentuser;
+
+        await cartModel.findByIdAndDelete({
+            "_id":CartItemId
+        })
+        
+        const Allitems = await cartModel.find({
+            "user": _id,
+        })
+            .populate("product")
+            .lean();
+
+        res.status(200).json({
+            isSuccess: true,
+            message: "Item Deleted from cart Successfully",
+            items: {
+                data: Allitems
+            }
+        })
+    }
+    catch (err) {
+        console.log("Error in deleteFromCartController", err.message)
+        res.status(500).json({
+            isSuccess: false,
+            message: "Server error in Deleting Product"
+        })
+    }
+}
 const getCartProductController = async (req, res) => {
     try {
         console.log("---------------Inside getCartProductController-------")
@@ -126,4 +158,4 @@ const getCartProductController = async (req, res) => {
         })
     }
 }
-module.exports = { addToCartController, getCartProductController, removeFromCartController }
+module.exports = { addToCartController, getCartProductController, removeFromCartController ,deleteFromCartController}

@@ -31,7 +31,7 @@ const placeOrderController = async(req,res)=>{
             }
             res.status(400).json({
                 isSuccess:false,
-                message:" Item is Out of Stock"
+                message:" Some Items are Out of Stock !"
             })
             return
         }

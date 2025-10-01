@@ -58,5 +58,34 @@ const removeFromCartValidator = (req,res,next)=>{
         })
     }
 }
+const deleteFromCartValidator = (req,res,next)=>{
+    try{
+        console.log("---------------inside deleteFromCartValidator---------")
+        const{CartItemId} = req.params;
 
-module.exports={addToCartValidator,removeFromCartValidator}
+        if(!CartItemId){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Please enter CartItemId"
+            })
+            return;
+        }
+        // if (!mongoose.isValidObjectId(productId) ) {
+        //     res.status(400).json({
+        //         isSuccess:false,
+        //         message:"Enter valid Ids"
+        //     })
+        //     return
+        // }
+        next();
+    }
+    catch(err){
+        console.log("Error in deleteFromCartValidator",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Server Error in deleteFromCartValidator"
+        })
+    }
+}
+
+module.exports={addToCartValidator,removeFromCartValidator,deleteFromCartValidator}
