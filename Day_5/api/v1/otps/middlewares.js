@@ -20,11 +20,14 @@ const validateOtpMiddleware = async(req,res,next)=>{
         if(!isCorrect){
             res.status(400).json({
                 isSuccess:false,
-                message:"InCorrect OTP!!"
+                message:"InCorrect OTP or OTP Expired !"
             })
             // We can also block the user after he has entered wrong otp for lets say 5 times(future use case)
             return
         }
+        // OTP is valid - delete it so it can't be reused
+        await otpModel.findOneAndDelete({ email });
+
         next();
     }
     catch(err){

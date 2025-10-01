@@ -33,7 +33,7 @@ const sendOtpController = async(req,res)=>{
         console.log("Error in sendOtpController",err.message);
         res.status(500).json({
             isSuccess:false,
-            message:"Error in Sendind Otp"
+            message:"Error in Sending Otp"
         })
     }
 }

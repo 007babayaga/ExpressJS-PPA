@@ -14,6 +14,7 @@ const otpSchema = new Schema({
         trim:true,
         required:true
     },
+    
 },{
     versionKey:false,
     timestamps:true
