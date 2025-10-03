@@ -18,7 +18,7 @@ const userSignUpValidator = (req,res,next)=>{
             })
             return
         }
-        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).+$/;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).{8,}$/;
         if(!password || !passwordRegex.test(password)){
             res.status(400).json({
                 isSuccess:false,

@@ -11,6 +11,8 @@ const sendOtpController = async(req,res)=>{
         //We send the Otp to email using EmailHelper file(NodeMailer)
         await sendOtp(email,otp);
 
+        const otpDeleteTime = new Date(Date.now() + 5 * 60 * 1000); // 5 minutes from now
+
         //before storing otp I will check for Duplicate Document
         const otpDoc = await otpModel.findOne({email});
         if(otpDoc){
@@ -20,7 +22,8 @@ const sendOtpController = async(req,res)=>{
         //we will store it in the Db
         await otpModel.create({
             email,
-            otp
+            otp,
+            otpDeleteTime,
         })
         //send a success response
         res.status(201).json({

@@ -14,7 +14,8 @@ const otpSchema = new Schema({
         trim:true,
         required:true
     },
-    
+    otpDeleteTime:Date
+
 },{
     versionKey:false,
     timestamps:true
