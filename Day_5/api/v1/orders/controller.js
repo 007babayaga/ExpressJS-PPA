@@ -35,6 +35,11 @@ const placeOrderController = async(req,res)=>{
             })
             return
         }
+        
+        await cartModel.deleteMany({
+            user:userId
+        })
+
         res.status(201).json({
             isSuccess:true,
             message:"Order placed Successully!!"

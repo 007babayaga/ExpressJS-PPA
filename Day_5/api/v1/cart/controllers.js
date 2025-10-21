@@ -143,7 +143,7 @@ const getCartProductController = async (req, res) => {
 
         res.status(200).json({
             isSuccess: true,
-            message: "Item added to cart SuccessFully",
+            message: "Item fetched from Cart SuccessFully",
             items: {
                 data: Allitems
             }

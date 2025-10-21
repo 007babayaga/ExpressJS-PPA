@@ -87,7 +87,7 @@ const userLoginController = async(req,res)=>{
 
         res.status(200).json({
             isSuccess:true,
-            message:"Login Success",
+            message:"Login Success!",
             // data:{
             //     email:userdoc.email,
             //     _id:userdoc.id

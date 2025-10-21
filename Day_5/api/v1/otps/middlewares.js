@@ -31,7 +31,7 @@ const validateOtpMiddleware = async (req, res, next) => {
                 isSuccess: false,
                 message: "InCorrect OTP !"
             })
-            // We can also block the user after he has entered wrong otp for lets say 5 times(future use case)
+            // We can also block the user after he has entered wrong otp for lets say 5 times(fuuture use case)
             return
         }
         // Prevent OTP reuse
