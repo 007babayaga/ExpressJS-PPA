@@ -1,6 +1,8 @@
 const { userModel } = require("../../../Models/userSchema");
+const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
+const { sendResetEmail } = require("../../../utils/tokenToEmailHelper");
 
 const userSignUpController = async(req,res)=>{
     try{
@@ -128,7 +130,161 @@ const userLogoutController = async(req,res)=>{
         })
     }
 }
+const resetPasswordController = async(req,res)=>{
+    try{
+        console.log("---------Inside resetPasswordController-------------")
+        const{email} = req.body;
+
+        //Find the existing user from the UserModel
+        const user = await userModel.findOne({email});
+
+         // Always return success to prevent email enumeration -security purposes
+        if (!user) {
+            console.log("No user found with email:", email);
+            res.status(200).json({
+                isSuccess: true,
+                message: "If an account with that email exists, a reset link has been sent."
+            });
+            return
+        }
+
+        // Then  Generate reset token 
+        const resetToken = crypto.randomBytes(32).toString('hex');
+
+        // Hash the token before saving to database
+        const resetTokenHash = crypto
+            .createHash('sha256')
+            .update(resetToken)
+            .digest('hex');
+
+         // Set token expiry (10 min from now)
+        const resetTokenExpiry = Date.now() + 10 * 60 * 1000;
+
+        // Now save the hashedtoken and tokenExpiry in Db
+        await userModel.findOneAndUpdate({email},
+            {
+                resetPasswordToken:resetTokenHash,
+                resetPasswordExpire:resetTokenExpiry,
+            }
+        );
+        console.log("Reset token generated for user:", user.email);
+
+        //Send reset Toekn to the Email
+        await sendResetEmail(user, resetToken);
+        res.status(200).json({
+            isSuccess: true,
+            message: "If an account with that email exists, a reset link has been sent."
+        });
+
+    }
+    catch(err){
+        console.log("Error in resetPasswordController:",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Erorr in resetPasswordController"
+        })
+    }
+}
+const validateResetTokenController = async (req, res) => {
+    try {
+        console.log("---------Inside validateResetTokenController----")
+        const { token } = req.params;
+
+        const resetTokenHash = crypto
+            .createHash('sha256')
+            .update(token)
+            .digest('hex');
+
+        const user = await userModel.findOne({
+            resetPasswordToken: resetTokenHash,
+            resetPasswordExpire: { $gt: Date.now() }
+        });
+
+        if (!user) {
+            return res.status(400).json({
+                isSuccess: false,
+                message: "Invalid or expired reset token"
+            });
+        }
+
+        res.status(200).json({
+            isSuccess: true,
+            message: "Valid reset token",
+            email: user.email
+        });
+
+    } catch (err) {
+        console.log("Error in validateResetTokenController:", err.message);
+        res.status(500).json({
+            isSuccess: false,
+            message: "Error in validateResetTokenController"
+        })
+    }
+}
+
+const resetPasswordWithTokenController  = async(req,res)=>{
+    try {
+        console.log("---------Inside resetPasswordWithTokenController----")
+        const { token } = req.params;
+        const { password } = req.body;
+
+        // Hash the token to compare with stored hash
+        const resetTokenHash = crypto
+            .createHash('sha256')
+            .update(token)
+            .digest('hex');
+
+        // Find user by token and check expiry
+        const user = await userModel.findOne({
+            resetPasswordToken: resetTokenHash,
+            resetPasswordExpire: { $gt: Date.now() }
+        });
+
+        if (!user) {
+            res.status(400).json({
+                isSuccess: false,
+                message: "Invalid or expired reset token"
+            });
+            return
+        }
+
+        // Check if new password is same as old password
+        const isSamePassword = await bcrypt.compare(password, user.password);
+        if (isSamePassword) {
+            res.status(400).json({
+                isSuccess: false,
+                message: "New password cannot be the same as old password"
+            });
+            return
+        }
+
+        // Update user password and clear reset token fields
+        await userModel.findOneAndUpdate(
+            { _id: user._id },
+            {
+                password: password, // Your pre-save hook will hash it automatically
+                resetPasswordToken: undefined,
+                resetPasswordExpire: undefined
+            }
+        );
+
+        console.log("Password reset successfully for user:", user.email);
+
+        res.status(200).json({
+            isSuccess: true,
+            message: "Password reset successfully. Please login with your new password."
+        });
+    }
+
+    catch(err){
+        console.log("Error in resetPasswordWithTokenController :",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:"Server Erorr in resetPasswordWithTokenController "
+        })
+    }
+}
 
 
 
-module.exports={userSignUpController,userLoginController,userLogoutController}
+module.exports={userSignUpController,userLoginController,userLogoutController,resetPasswordController,resetPasswordWithTokenController,validateResetTokenController}

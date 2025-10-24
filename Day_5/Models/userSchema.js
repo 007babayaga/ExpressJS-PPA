@@ -32,6 +32,13 @@ const userSchema = new Schema({
     isProfileComplete:{
         type:Boolean,
         default:false
+    },
+    // These Fields I am Adding to Reset the Password
+    resetPasswordToken: {
+        type: String
+    },
+    resetPasswordExpire: {
+        type: Date
     }
 },{
     versionKey:false,

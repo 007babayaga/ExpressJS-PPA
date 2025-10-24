@@ -75,5 +75,47 @@ const userLoginValidator = (req,res,next)=>{
         })
     }
 }
+const resetPasswordValidator = (req,res,next)=>{
+    try{
+        console.log("---------Inside resetPasswordValidator-------- ");
+        const{email} = req.body;
 
-module.exports={userLoginValidator,userSignUpValidator}
+        if(!email){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Please Enter Email"
+            })
+            return
+        }
+        
+        next();
+    }
+
+    catch(err){
+        console.log("Error in resetPasswordValidator:",err.message);
+        res.status(500).json({
+            isSuccess:false,
+            message:" Server Erorr in Resetting Password"
+        })
+    }
+}
+const resetPasswordTokenValidator = (req,res,next)=>{
+    try{
+        console.log("--------------resetPasswordTokenValidator----------")
+        const { password } = req.body;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`-]).{8,}$/;
+        if(!password ||!passwordRegex.test(password)){
+            res.status(400).json({
+                isSuccess:false,
+                message:"Enter valid Password"
+            })
+            return
+        }
+        next();
+    }
+    catch(err){
+        console.log("--------------Error in resetPasswordTokenValidator,er")
+    }
+}
+
+module.exports={userLoginValidator,userSignUpValidator,resetPasswordValidator,resetPasswordTokenValidator}
